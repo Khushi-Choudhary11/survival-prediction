@@ -46,7 +46,15 @@ Data: [Survivor_Detection competition on Kaggle](https://www.kaggle.com/competit
 | Logistic Regression | 0.833 |
 | KNN | 0.824 |
 
-Final accuracy of the submission on the Kaggle leaderboard: **86.58%** with CatBoost.
+Same CatBoost model and notebook on the Kaggle leaderboard:
+
+| Split | Accuracy |
+|---|---|
+| 5-fold cross-validation | about 83.6% |
+| Public leaderboard | **86.58%** |
+| Private leaderboard | **83.5%** |
+
+The private score (the full hidden test set) agrees with cross-validation, so about 83 to 84% is the realistic accuracy. The public score is computed on only a portion of the 179-passenger test set, so a few lucky predictions can move it by a point or more.
 
 With 712 rows the standard error of these scores is around 1 to 2 points, so the models are statistically very close. CatBoost was kept for stability on a small dataset with a strong prior for tabular data, not because it is provably better.
 
@@ -80,6 +88,7 @@ jupyter lab survival-prediction.ipynb
 | File | Purpose |
 |---|---|
 | `survival-prediction.ipynb` | Full notebook with outputs |
+| `Building a High-Accuracy Survival Prediction System--final.pptx` | Project presentation slides |
 | `requirements.txt` | Python dependencies |
 | `LICENSE` | MIT |
 
