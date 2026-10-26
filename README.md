@@ -46,7 +46,7 @@ Data: [Survivor_Detection competition on Kaggle](https://www.kaggle.com/competit
 | Logistic Regression | 0.833 |
 | KNN | 0.824 |
 
-Final accuracy of the submission on the Kaggle leaderboard: **86.58%**.
+Final accuracy of the submission on the Kaggle leaderboard: **86.58%** with CatBoost.
 
 With 712 rows the standard error of these scores is around 1 to 2 points, so the models are statistically very close. CatBoost was kept for stability on a small dataset with a strong prior for tabular data, not because it is provably better.
 
